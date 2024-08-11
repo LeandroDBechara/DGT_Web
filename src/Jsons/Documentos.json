@@ -1,0 +1,22 @@
+{
+  "documentos": [
+    {
+      "id": 0,
+      "nombre": "ley n° 6.210",
+      "pdf": "/src/documentos/L-6210-consolidada.pdf",
+      "tipo": "normativa"
+    },
+    {
+      "id": 1,
+      "nombre": "Ley n° 24.449",
+      "pdf": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/818/texact.htm",
+      "tipo": "normativa"
+    },
+    {
+      "id": 2,
+      "nombre": "Ley n° 24.449",
+      "pdf": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/818/texact.htm",
+      "tipo": "resolucion"
+    }
+  ]
+}

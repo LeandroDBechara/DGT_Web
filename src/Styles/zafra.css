@@ -1,0 +1,17 @@
+main{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+.contenido{
+    
+    margin-right: 0;
+    margin-top: 0px
+}
+
+.zafra{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

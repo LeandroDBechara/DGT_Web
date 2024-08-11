@@ -1,0 +1,22 @@
+Inicio:
+-probar hacer un carrucel mirar en twitter
+-nav el nav mision pede aparecer en minuscula #cosas de marisol
+-epacio de sobra en numeros utiles #cosas de marisol pero creo que check
+
+Mision:
+-dependencia puede aparecer un minuscula #cosas de marisol
+
+Normativa/Resoluciones:
+
+
+Recorrido:
+-aparece en mayusculas #cosas de marisol
+
+Multas:
+-el texto del boton se sale #check
+-cambiar "ingresar datos..." por busqueda de multas #check
+-colocar mensaje en caso que no tenga multas #check
+
+Discapacidad:
+-horarios de atencion no estan bien separados #check
+-correcciones ortograficas #check

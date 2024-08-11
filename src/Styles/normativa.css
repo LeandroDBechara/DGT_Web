@@ -1,0 +1,36 @@
+
+.docu{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.bDoc {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 80%;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #0194c3;
+  background: #75ddff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight:bold;
+}
+.bDoc p:first-letter {
+  text-transform: uppercase;
+}
+.flecha {
+
+    height: 25px;
+
+}
+.documento {
+  display: none;
+  text-align: center;
+}
+iframe{
+  width: 80%;
+  height: 500px;
+}

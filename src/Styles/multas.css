@@ -1,0 +1,74 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ddf6fe;
+  width: 58svb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+.formulario h1{
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ingre {
+  width:60%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 10px;
+  border: 1px solid #000;
+}
+.boton {
+  border-radius: 10px;
+  background: #00a7dd;
+  width:50%;
+  flex-shrink: 0;
+  margin: 20px;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #000;
+  
+}
+
+.tabla{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ddf6fe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  top: 20%;
+  margin: 20px;
+  width: 80%;
+}
+.tabla h1{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tabla2{
+  flex-shrink: 0;
+  margin: 20px;
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  table-layout: auto;
+  background-color:rgb(255, 255, 255);
+}
+
+.tabla2 th{
+  border: 1px solid #000;
+  text-align: center;
+  height: 20px;
+}
+tbody{
+  text-align: center;
+}

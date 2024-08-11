@@ -1,0 +1,48 @@
+main{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.acla{
+    font-weight:bold;
+    font-size:15px;
+    color:rgb(180, 4, 4);
+}
+
+.requisitos{
+    margin-top:30px;
+}
+
+.hya{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    flex-wrap: wrap;
+}
+.hya div{
+    justify-content: center;
+    
+}
+.horarios{
+    display:flex;
+    align-items:center;
+}
+.horarios div{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width:50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.hor{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
