@@ -8,13 +8,19 @@ export function MultasContextProvider(props) {
   const [multas, setMultas] = useState([]);
 
   useEffect(() => {
-    setMultas(data);
+    getMultas();
   }, []);
+
+  async function getMultas() {
+    const res = await fetch("http://localhost:4000/multas");
+    const resJson = await res.json();
+    setMultas(resJson);
+  }
 
   function consultar() {
     let dni = document.getElementById("dni").value;
     let dominio = document.getElementById("dominio").value;
-    setMultas(data.filter(
+    setMultas(multas.filter(
       (multa) => multa.dni === dni || multa.dominio === dominio.toUpperCase()
     ));
     let tabla = document.getElementsByClassName("tabla")

@@ -34,7 +34,7 @@ function Gestion() {
           <input id="usuario" type="text" placeholder="Usuario" />
           <p>Contraceña</p>
           <input id="contraseña" type="password" placeholder="Contraseña" />
-          <button onClick={log}>Iniciar sesion</button>
+          <button className="btn" onClick={log}>Iniciar sesion</button>
         </div>
         <div className="gestion">
           <div className="gestion1">
@@ -43,7 +43,7 @@ function Gestion() {
               <input id="nombreD" type="text" placeholder="Nombre" required />
               <div className="radio">
                 <div className="radioD">                <input
-                  value="normativa"
+                  value={0}
                   type="radio"
                   id="normativa"
                   name="documento"
@@ -53,7 +53,7 @@ function Gestion() {
                 </div>
                 <div className="radioN">
                 <input
-                  value="resolucion"
+                  value={1}
                   type="radio"
                   id="resolucion"
                   name="documento"
@@ -62,7 +62,7 @@ function Gestion() {
                 </div>
               </div>
               <input id="pdf" type="url" placeholder="URL/PDF" required />
-              <button onClick={crearDoc}>Añadir documento</button>
+              <button className="btn" onClick={crearDoc}>Añadir documento</button>
             </div>
 
             <table className="tabla2">
@@ -91,7 +91,7 @@ function Gestion() {
               <h4>Linea</h4>
               <input id="nombreL" type="text" placeholder="Nombre" required />
               <input id="mapa" type="url" placeholder="Mapa" required />
-              <button onClick={crearLinea}>Añadir linea</button>
+              <button className="btn" onClick={crearLinea}>Añadir linea</button>
             </div>
 
             <table className="tabla2">

@@ -8,7 +8,6 @@ Mision:
 
 Normativa/Resoluciones:
 
-
 Recorrido:
 -aparece en mayusculas #cosas de marisol
 
@@ -21,4 +20,13 @@ Discapacidad:
 -horarios de atencion no estan bien separados #check
 -correcciones ortograficas #check
 
-AL FINNNNNNNN
+<MapContainer id="mapa1" className="mapa"  center={center} zoom={13} scrollWheelZoom={true}>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Polyline pathOptions={{color: 'red'}} positions={mapa} />
+  </MapContainer>
+
+0= Normativa
+1= Resolucion

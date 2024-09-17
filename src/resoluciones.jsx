@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <TopBar />
       <main>
       <div style={{ margin: "20px" }}>
-        <DocList tipo={"resolucion"} />
+        <DocList tipo={1} />
       </div>
       </main>
       <ButtomBar />

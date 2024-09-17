@@ -1,4 +1,10 @@
-
+.btn:hover{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 .general {
   display: flex;
   flex-direction: column;

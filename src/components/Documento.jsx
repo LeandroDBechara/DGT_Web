@@ -11,7 +11,7 @@ function Documento({ doc }) {
       <button className="bDoc" onClick={() => mostrarDoc(doc.id)}><p>{doc.nombre}</p><IconChevronDown className="flecha"/></button>
       </div>
       <div id={doc.id} className="documento">
-        <iframe  src={doc.pdf}></iframe>
+        <iframe  src={doc.enlace}></iframe>
         </div>
       
     </div>
