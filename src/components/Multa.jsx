@@ -6,24 +6,40 @@ function Multa() {
   
   return (
     <div className="container">
-      <div className="formulario">
+      <form className="formulario" onSubmit={consultar}>
         <h1>Busqueda de infracciones</h1>
         <input
           className="ingre"
           id="dni"
-          type="text"
-          placeholder="DNI / CUIL"
+          type="number"
+          placeholder="DNI / CUIL (sin puntos, ni barras)"
+          onInput={(e) => {
+            e.target.value = e.target.value.replace(/[^0-9]/g, "");
+            if (e.target.value.length > 11) {
+              e.target.value = e.target.value.slice(0, 11);
+            }
+          }}
         />
+        <div>
+        <img src="./src/assets/pregunta.svg" alt=""title="El dominio debe tener el formato: 3 letras y 3 numero o 2 letras, 3 numeros y 2 letras" />
         <input
           className="ingre"
           id="dominio"
           type="text"
           placeholder="Dominio del vehiculo"
+          onInput={(e)=>{
+            e.target.value = e.target.value.toUpperCase();
+            if (e.target.value.length > 7) {
+              e.target.value = e.target.value.slice(0, 7);
+            }
+          }}
         />
-        <button className="boton" onClick={consultar}>
+        </div>
+        <p className="error"></p>
+        <button className="boton">
           Consultar Infracciones
         </button>
-      </div>
+      </form>
       <div className="tabla">
         <h1>Infracciones encontradas</h1>
         <table className="tabla2">

@@ -109,3 +109,8 @@
 .radio input{
   width: initial;
 }
+.error{
+  display:none;
+  color:red;
+  padding-bottom:15px;
+}

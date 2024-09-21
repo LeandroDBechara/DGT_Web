@@ -17,28 +17,33 @@ function Gestion() {
   const { lineas, crearLinea, eliminarLinea } = useContext(LineasContext);
   const { docs, crearDoc, eliminarDoc } = useContext(DocContext);
 
-  function log() {
+  function log(e) {
+    e.preventDefault();
     let usuario = document.getElementById("usuario").value;
     let contraseña = document.getElementById("contraseña").value;
     if (usuario === "admin" && contraseña === "admin") {
       document.querySelector(".gestion").style.display = "flex";
       document.querySelector(".login").style.display = "none";
+    }else{
+      document.querySelector(".error").innerHTML = "Usuario o contraseña incorrectos";
+      document.querySelector(".error").style.display = "block";
     }
   }
   return (
     <>
       <div className="general">
-        <div className="login">
+        <form className="login" onSubmit={log}>
           <img src="src/assets/Logo.svg" alt="logo" />
           <p>Usuario</p>
-          <input id="usuario" type="text" placeholder="Usuario" />
+          <input id="usuario" type="text" placeholder="Usuario" required />
           <p>Contraceña</p>
-          <input id="contraseña" type="password" placeholder="Contraseña" />
-          <button className="btn" onClick={log}>Iniciar sesion</button>
-        </div>
+          <input id="contraseña" type="password" placeholder="Contraseña" required />
+          <p className="error">kljlj</p>
+          <button className="btn" type="submit">Iniciar sesion</button>
+        </form>
         <div className="gestion">
           <div className="gestion1">
-            <div className="gestion2">
+            <form className="gestion2" onSubmit={crearDoc}>
               <h4>Documento</h4>
               <input id="nombreD" type="text" placeholder="Nombre" required />
               <div className="radio">
@@ -47,6 +52,7 @@ function Gestion() {
                   type="radio"
                   id="normativa"
                   name="documento"
+                  required
                   
                 />
                 Normativa
@@ -61,9 +67,9 @@ function Gestion() {
                 Resolucion
                 </div>
               </div>
-              <input id="pdf" type="url" placeholder="URL/PDF" required />
-              <button className="btn" onClick={crearDoc}>Añadir documento</button>
-            </div>
+              <input id="pdf" type="url" placeholder="URL" required />
+              <button className="btn">Añadir documento</button>
+            </form>
 
             <table className="tabla2">
               <thead>
@@ -87,12 +93,12 @@ function Gestion() {
             </table>
           </div>
           <div className="gestion1">
-            <div className="gestion2">
+            <form className="gestion2" onSubmit={crearLinea}>
               <h4>Linea</h4>
               <input id="nombreL" type="text" placeholder="Nombre" required />
               <input id="mapa" type="url" placeholder="Mapa" required />
-              <button className="btn" onClick={crearLinea}>Añadir linea</button>
-            </div>
+              <button className="btn">Añadir linea</button>
+            </form>
 
             <table className="tabla2">
               <thead>

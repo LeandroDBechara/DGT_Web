@@ -12,6 +12,18 @@
 .formulario h1{
   text-align: center;
 }
+.formulario div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ddf6fe;
+  width: 58svb;
+  margin: 20px;
+}
+.formulario img{
+  margin-left: -20px ;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -71,4 +83,10 @@
 }
 tbody{
   text-align: center;
+}
+.error{
+  display: none;
+  text-align: center;
+  color:red;
+  margin-bottom: auto;
 }

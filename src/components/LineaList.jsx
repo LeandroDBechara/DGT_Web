@@ -1,12 +1,9 @@
 import { useContext } from "react";
 import { LineasContext } from "../context/LineasContext";
 import Linea from "./Linea";
-import { MapContainer, TileLayer, useMap ,Polyline ,Circle } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 function LineaList() {
   const { searcher, results, mapa, search } = useContext(LineasContext);
-  const center = [-26.8208,-65.2123];
 
   return (
     <div className="buscador">

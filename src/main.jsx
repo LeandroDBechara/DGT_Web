@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { TaskContextProvider } from "./context/TaskContext.jsx";
 import TopBar from "./components/TopBar";
 import ButtonBar from "./components/ButtomBar";
 import "./Styles/main.css";
-
 import "@splidejs/react-splide/css";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 
@@ -15,7 +13,6 @@ import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <TaskContextProvider>
       <TopBar />
       <main>
         <Splide
@@ -99,6 +96,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </div>
       </main>
       <ButtonBar />
-    </TaskContextProvider>
   </React.StrictMode>
 );

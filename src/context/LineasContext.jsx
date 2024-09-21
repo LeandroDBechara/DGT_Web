@@ -1,6 +1,5 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
-import { lineas as data } from "../Jsons/Lineas.json";
 
 export const LineasContext = createContext();
 
@@ -42,11 +41,10 @@ export function LineasContextProvider(props) {
     }
   }
 
-  async function crearLinea() {
-    console.log("cargando")
-    let linea = document.getElementById("nombreL").value;
-    let mapa = document.getElementById("mapa").value;
-
+  async function crearLinea(e) {
+    e.preventDefault();
+    const linea = e.target.nombreL.value;
+    const mapa = e.target.mapa.value;
     if (linea && mapa) {
       const res = await fetch("http://localhost:4000/agregarlinea", {
         method: "POST",

@@ -1,6 +1,5 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
-import { documentos } from "../Jsons/Documentos.json";
 
 export const DocContext = createContext();
 
@@ -16,14 +15,11 @@ export function DocContextProvider(props) {
     setDocs(resJson);
   }
 
-  async function crearDoc() {
-    let nombre = document.getElementById("nombreD").value;
-    let val = document.getElementsByName("documento");
-    let enlace = document.getElementById("pdf").value;
-    let tipo;
-    val.forEach(async (va) => {
-      if (va.checked) {
-        tipo = va.value;
+  async function crearDoc(e) {
+    e.preventDefault();
+    const nombre = e.target.nombreD.value;
+    const tipo = e.target.documento.value; // El radio seleccionado
+    const enlace = e.target.pdf.value;
         if (nombre && enlace && tipo) {
           const res = await fetch("http://localhost:4000/agregardoc", {
             method: "POST",
@@ -36,7 +32,7 @@ export function DocContextProvider(props) {
               tipo: tipo,
             }),
           });
-
+          
           if (res.ok) {
             getDocumentos();
             console.log("Elemento insertado exitosamente");
@@ -49,8 +45,6 @@ export function DocContextProvider(props) {
             console.error("Error al insertar el elemento");
           }
         }
-      }
-    });
   }
 
   function mostrarDoc(id) {
