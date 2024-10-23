@@ -21,7 +21,7 @@ function Multa() {
           }}
         />
         <div>
-        <img src="./src/assets/pregunta.svg" alt=""title="El dominio debe tener el formato: 3 letras y 3 numero o 2 letras, 3 numeros y 2 letras" />
+        <img src="/assets/pregunta.svg" alt=""title="El dominio debe tener el formato: 3 letras y 3 numero o 2 letras, 3 numeros y 2 letras" />
         <input
           className="ingre"
           id="dominio"

@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
+import { build, defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"http://LeandroDBechara.github.io/dgt-web",
+  base:"https://LeandroDBechara.github.io/DGT-Web/",
   build: {
     rollupOptions: {
       input: {
@@ -19,5 +19,5 @@ export default defineConfig({
         zafra: 'zafra.html'
       }
     }
-  }
+  },
 })
