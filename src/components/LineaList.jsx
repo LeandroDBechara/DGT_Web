@@ -8,7 +8,7 @@ function LineaList() {
   return (
     <div className="buscador">
       <div className="busca" id="busca">
-        <img className="lupa" src="src/assets/lupa.svg" alt="" />
+        <img className="lupa" src={`${import.meta.env.BASE_URL}/assets/lupa.svg`} alt="" />
         <input
           className="busc"
           value={search}

@@ -33,7 +33,7 @@ function Gestion() {
     <>
       <div className="general">
         <form className="login" onSubmit={log}>
-          <img src="src/assets/Logo.svg" alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}/assets/Logo.svg`} alt="logo" />
           <p>Usuario</p>
           <input id="usuario" type="text" placeholder="Usuario" required />
           <p>Contraceña</p>

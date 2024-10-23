@@ -29,23 +29,23 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           }}
         >
           <SplideSlide>
-            <img className="carrusel" src="/assets/colectivo.png" alt="Image 1" />
+            <img className="carrusel" src={`${import.meta.env.BASE_URL}/assets/colectivo.png`} />
           </SplideSlide>
           <SplideSlide>
-            <img className="carrusel" src="/assets/auto.png" alt="Image 2" />
+            <img className="carrusel" src={`${import.meta.env.BASE_URL}/assets/auto.png`} alt="Image 2" />
           </SplideSlide>
           <SplideSlide>
-            <img className="carrusel" src="/assets/direc2.jpg" alt="Image 3" />
+            <img className="carrusel" src={`${import.meta.env.BASE_URL}/assets/direc2.jpg`} alt="Image 3" />
           </SplideSlide>
         </Splide>
         <div className="sitios">
           <div className="sitio1">
             <a href="https://www.tucuman.gov.ar/">
-              <img src="/assets/hnzthxf9.png" alt="Gobierno de Tucuman" />
+              <img src={`${import.meta.env.BASE_URL}/assets/9okjmps1.png`} alt="Gobierno de Tucuman" />
             </a>
 
             <a href="http://mininteriortucuman.gob.ar/">
-              <img src="/assets/q1mp2h4e.png" alt="Ministerio" />
+              <img src={`${import.meta.env.BASE_URL}/assets/q1mp2h4e.png`} alt="Ministerio" />
             </a>
           </div>
           <div className="sitio2">

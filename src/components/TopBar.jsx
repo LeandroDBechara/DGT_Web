@@ -6,7 +6,7 @@ function TopBar() {
     <nav>
       <div>
         <a style={{color:"black", textDecoration: "none"}} href="index.html">
-          <img className="logo" src="/assets/Logo.svg" alt="Logo" />
+          <img className="logo" src={`${import.meta.env.BASE_URL}/assets/Logo.svg`} alt="Logo" />
           <p className="dgt">Dirección General de Transporte de Tucumán</p>
         </a>
         <div className="line"></div>

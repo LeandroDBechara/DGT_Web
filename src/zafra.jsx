@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </ul>
             <p>Es responsabilidad pura y exclusiva del presentante mantener vigente durante el período de zafra la documentación presentada.</p>
         </div>
-        <div><img src="/assets/zafra4.png" alt="" /></div>
+        <div><img src={`${import.meta.env.BASE_URL}/assets/zafra4.png`} alt="" /></div>
         </div>
         </main>
         <ButtomBar />
