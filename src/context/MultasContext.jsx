@@ -1,6 +1,6 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
-
+import {multas as data} from "/public/Jsons/Multas.json";
 
 export const MultasContext = createContext();
 
@@ -8,12 +8,19 @@ export function MultasContextProvider(props) {
   const [multas, setMultas] = useState([]);
 
   async function getMultas(dni, dominio) {
-    const url = new URL("http://localhost:4000/multas");
-    url.searchParams.append('dni', dni); // Agrega el parámetro DNI
-    url.searchParams.append('dominio', dominio); // Agrega el parámetro Dominio
-    const res = await fetch(url);
-    const resJson = await res.json();
-    setMultas(resJson);
+    try{
+      const url = new URL("http://localhost:4000/multas");
+      url.searchParams.append('dni', dni); // Agrega el parámetro DNI
+      url.searchParams.append('dominio', dominio); // Agrega el parámetro Dominio
+      const res = await fetch(url);
+      const resJson = await res.json();
+      setMultas(resJson);
+    }catch(err){
+      
+      const dato = data.filter((dt) => dt.dni===dni || dt.dominio===dominio)
+      setMultas(dato);
+    }
+
   }
 
   function consultar(e) {

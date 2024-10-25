@@ -1,5 +1,6 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
+import { lineas as data } from "/public/Jsons/Lineas.json";
 
 export const LineasContext = createContext();
 
@@ -14,9 +15,13 @@ export function LineasContextProvider(props) {
   }, []);
 
   async function getLineas() {
-    const res = await fetch("http://localhost:4000/lineas");
-    const resJson = await res.json();
-    setLineas(resJson);
+    try{
+      const res = await fetch("http://localhost:4000/lineas");
+      const resJson = await res.json();
+      setLineas(resJson);
+    }catch(err){
+      setLineas(data);
+    }
   }
   function searcher(e) {
     {

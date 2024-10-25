@@ -55,7 +55,7 @@ function Multa() {
           <tbody>
           {multas.length === 0 && <tr><td colSpan="5" style={{fontWeight: 'bold'}}>No posee infracciones / multas</td></tr>}
             {multas.map((multa) => (
-              <tr>
+              <tr key={multa.id}>
                 <th>{multa.expediente}</th>
                 <th>{multa.titular}</th>
                 <th>{multa.resolucion}</th>

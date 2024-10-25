@@ -1,5 +1,6 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
+import { documentos } from "/public/Jsons/Documentos.json";
 
 export const DocContext = createContext();
 
@@ -10,9 +11,13 @@ export function DocContextProvider(props) {
   }, []);
 
   async function getDocumentos() {
-    const res = await fetch("http://localhost:4000/documentos");
-    const resJson = await res.json();
-    setDocs(resJson);
+    try{
+      const res = await fetch("http://localhost:4000/documentos");
+      const resJson = await res.json();
+      setDocs(resJson);
+    }catch(err){
+      setDocs(documentos);
+    }
   }
 
   async function crearDoc(e) {

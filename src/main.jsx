@@ -41,7 +41,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <div className="sitios">
           <div className="sitio1">
             <a href="https://www.tucuman.gov.ar/">
-              <img src={`${import.meta.env.BASE_URL}/assets/9okjmps1.png`} alt="Gobierno de Tucuman" />
+              <img src={`${import.meta.env.BASE_URL}/assets/hnzthxf9.png`} alt="Gobierno de Tucuman" />
             </a>
 
             <a href="http://mininteriortucuman.gob.ar/">
