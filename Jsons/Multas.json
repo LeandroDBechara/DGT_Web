@@ -1,0 +1,30 @@
+{
+    "multas": [
+        {
+            "id":0,
+            "expediente":"2471",
+            "titular":"Paz Vega Mauro Miguel",
+            "dni":"15798562",
+            "resolucion":"5717",
+            "dominio":"AAA111",
+            "tipov":"Moto"
+        },
+        {
+            "id":1,
+            "expediente":"2612",
+            "titular":"Martinez Manuel",
+            "dni":"20395753151",
+            "resolucion":"3484",
+            "dominio":"ENX945",
+            "tipov":"Auto"
+        },
+        {
+            "id":2,
+            "expediente":"2753",
+            "titular":"Gunset Exequiel Manuel",
+            "dni":"12345678",
+            "resolucion":"5817",
+            "dominio":"10JHK33",
+            "tipov":"Moto"
+        }
+        ]}

@@ -1,0 +1,24 @@
+{
+  "lineas": [
+    {
+      "id": 0,
+      "linea": "Linea 103 - El manantial",
+      "mapa": "https://www.google.com/maps/d/embed?mid=1fw7x4iHnvHbMKYTB0rLPApmi290&ehbc=2E312F"
+    },
+    {
+      "id": 1,
+      "linea": "Linea 109 - Lomas de Tafi",
+      "mapa": "https://www.google.com/maps/d/embed?mid=1O_1w514mLYFZzXTm-99tg8Wzpbs&ehbc=2E312F"
+    },
+    {
+      "id": 2,
+      "linea": "Linea 110 - Comuna El Mananital",
+      "mapa": "https://www.google.com/maps/d/embed?mid=1suObnDlaa4pMSVXOYJipriC_aFw&ehbc=2E312F"
+    },
+    {
+      "id": 3,
+      "linea": "Linea 131 - Karamanef - Lomas de Tafi",
+      "mapa": "https://www.google.com/maps/d/embed?mid=1lC_8jrhONEunEGi6m_48sTz95IE&ehbc=2E312F"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "documentos": [
+    {
+      "id": 0,
+      "nombre": "ley n° 6.210",
+      "enlace": "/src/documentos/L-6210-consolidada.pdf",
+      "tipo": 0
+    },
+    {
+      "id": 1,
+      "nombre": "Ley n° 24.449",
+      "enlace": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/818/texact.htm",
+      "tipo": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Resolucion n° 1.221",
+      "enlace": "https://LeandroDBechara.github.io/DGT_Web/documentos/RESOLUCION Nº1221.pdf",
+      "tipo": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Decreto acuerdo n° 19/7(MSC)",
+      "enlace": "https://msptucuman.gov.ar/wordpress/wp-content/uploads/DA-19-7-2007-Complementa-Ley-7243.pdf",
+      "tipo": 1
+    }
+  
+  ]
+}
