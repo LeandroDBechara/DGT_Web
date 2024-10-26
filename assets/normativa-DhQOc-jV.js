@@ -1,4 +1,4 @@
-import{r as n,j as e}from"./ButtomBar-BlCFZZyj.js";import{D as l}from"./DocContext-BivOLAYM.js";/**
+import{r as n,j as e}from"./ButtomBar-BlCFZZyj.js";import{D as l}from"./DocContext-DhE2Pka8.js";/**
  * @license @tabler/icons-react v3.5.0 - MIT
  *
  * This source code is licensed under the MIT license.
